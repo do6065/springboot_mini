@@ -1,14 +1,15 @@
 package org.example.mini_project;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Server OK";
+        // src/main/resources/static/upload.html 로 포워딩
+        return "forward:/upload.html";
     }
 }
 
