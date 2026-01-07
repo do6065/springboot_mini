@@ -36,7 +36,7 @@ dependencyManagement {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-    implementation 'io.awspring.cloud:spring-cloud-aws-starter'
+    implementation 'io.awspring.cloud:spring-cloud-aws-starter-s3'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
